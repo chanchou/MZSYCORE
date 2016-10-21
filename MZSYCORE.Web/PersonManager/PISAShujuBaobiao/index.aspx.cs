@@ -14,6 +14,8 @@ namespace MZSYCORE.Web.PersonManager.PISA数据报表
         BLL.BLL_PISA bll_pisa = new BLL.BLL_PISA();
         public string YinhangkaYewu_Zongliang = "没有数据";
 
+      //测试  int i0
+
        //参数设置
         public string Jigouma = Web_Constant.Jigouma;
         public string Kabin = Web_Constant.Kabin;
@@ -326,6 +328,7 @@ namespace MZSYCORE.Web.PersonManager.PISA数据报表
 
             //根据当前时间，判断是否存在使用的缓存。如果存在，那么直接调用，否则重新生成。
             //同时，判断上一个缓存是否存在，如果存在，那么删除
+            //
             if (Cache[SaacntxtCacheNameToDelete] != null)
             {
                 Cache[SaacntxtCacheNameToDelete] = null;

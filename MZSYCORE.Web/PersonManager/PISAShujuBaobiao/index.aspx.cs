@@ -14,8 +14,7 @@ namespace MZSYCORE.Web.PersonManager.PISA数据报表
         BLL.BLL_PISA bll_pisa = new BLL.BLL_PISA();
         public string YinhangkaYewu_Zongliang = "没有数据";
 
-        ////////
-        ////////
+       
 
        //参数设置
         public string Jigouma = Web_Constant.Jigouma;

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{697F593D-F14E-47A4-8226-4ACF31B5F1CC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MZSYCORE.BLL</RootNamespace>
+    <AssemblyName>MZSYCORE.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL_CBOD_CRATMDET.cs" />
+    <Compile Include="BLL_CBOD_LNLNSLNS.cs" />
+    <Compile Include="BLL_CBOD_SAACNTXN.cs" />
+    <Compile Include="BLL_employee_info.cs" />
+    <Compile Include="BLL_LSB_CKZH.cs" />
+    <Compile Include="BLL_news.cs" />
+    <Compile Include="BLL_pasinfo.cs" />
+    <Compile Include="BLL_XDXT_BUSINESS_DUEBILL.cs" />
+    <Compile Include="BLL_XTB_DXTZ.cs" />
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="MyCode\BLL_CaiwubuSuoxuShuju.cs" />
+    <Compile Include="MyCode\BLL_CBOD_GLACAACA.cs" />
+    <Compile Include="MyCode\BLL_CBOD_TDACNACN.cs" />
+    <Compile Include="MyCode\BLL_CXYGMXCKZHMX.cs" />
+    <Compile Include="MyCode\BLL_DaikuanhuLixi.cs" />
+    <Compile Include="MyCode\BLL_CBOD_LNLNSLNS.cs" />
+    <Compile Include="MyCode\BLL_DaikuanFangHuankuan.cs" />
+    <Compile Include="MyCode\BLL_DianziYinhangShuju.cs" />
+    <Compile Include="MyCode\BLL_FNIE_KMRJB.cs" />
+    <Compile Include="MyCode\BLL_PISA.cs" />
+    <Compile Include="MyCode\BLL_RiJun_SAACNACN_SAACNTXN.cs" />
+    <Compile Include="MyCode\BLL_ToubaoJigouCunkuanZhanghuTongjibiao.cs" />
+    <Compile Include="MyCode\BLL_YJZB_JG_01.cs" />
+    <Compile Include="MyCode\BLL_ZiZao_BirthdayMessage.cs" />
+    <Compile Include="MyCode\BLL_ZiZao_DaiKuanLiXiMingXi.cs" />
+    <Compile Include="MyCode\BLL_ZiZao_MRDQDC_CBOD_TDACNACN.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MZSYCORE.DAL\MZSYCORE.DAL.csproj">
+      <Project>{fc8735a9-016c-49f1-b97b-ecee31c38693}</Project>
+      <Name>MZSYCORE.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MZSYCORE.Model\MZSYCORE.Model.csproj">
+      <Project>{a76440bc-b3ac-467b-a0b3-526bd16bb415}</Project>
+      <Name>MZSYCORE.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
